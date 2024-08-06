@@ -4,7 +4,7 @@ function calculate (opera) {
     let result;
 
     if (isNaN(num1) || isNaN(num2)) {
-        result = "sayı girin";
+        result = "Eksik sayı girdiniz";
     } else {
         switch (opera) {
             case "+":
@@ -22,14 +22,14 @@ function calculate (opera) {
                 case "/":
                 if (num2 === 0) {
                     result = "0 bolünmez";
-                    alert("0 bolünürmü aw");
+                    alert("0 bolünmez sayıdır");
                 } else {
                     result = num1 / num2;
                 }
                 break;
         
             default:
-               result = "naptın bee"
+               result = "Error"
         }
     }
     document.getElementById("result").innerText =`Sonuç ${result}`
